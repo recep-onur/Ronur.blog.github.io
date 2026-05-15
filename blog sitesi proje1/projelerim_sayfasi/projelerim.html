@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projelerim | Recep Onur</title>
+    <meta name="description" content="Recep Onur'un projeleri.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../tema.css">
+    <link rel="stylesheet" href="projelerim.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="main-navbar">
+        <div class="navbar-inner">
+
+            <!-- Sol: Logo / Profil -->
+            <a href="../index_sayfasi/index.html" class="navbar-brand" id="logo">
+                <div class="brand-avatar">RO</div>
+                <div class="brand-info">
+                    <span class="brand-name">Recep Onur</span>
+                    <span class="brand-tagline">Kişisel Portfolyo ve Blog</span>
+                </div>
+            </a>
+
+            <!-- Hamburger (mobil) -->
+            <button type="button" class="navbar-toggle" id="navbar-toggle" aria-label="Menüyü aç/kapat"
+                aria-expanded="false">
+                <span class="toggle-bar"></span>
+                <span class="toggle-bar"></span>
+                <span class="toggle-bar"></span>
+            </button>
+
+            <!-- Sağ: Linkler -->
+            <ul class="navbar-links" id="navbar-links">
+                <li><a href="../index_sayfasi/index.html" class="nav-link"><svg class="nav-icon" width="18" height="18"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                        </svg>Anasayfa</a></li>
+                <li><a href="../hakkimda_sayfasi/hakkimda.html" class="nav-link"><svg class="nav-icon" width="18"
+                            height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>Hakkımda</a></li>
+                <li><a href="../blog_sayfasi/blog.html" class="nav-link"><svg class="nav-icon" width="18" height="18"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                            <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                        </svg>Blog</a></li>
+                <li><a href="projelerim.html" class="nav-link active"><svg class="nav-icon" width="18" height="18"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>Projelerim</a></li>
+                <li><a href="../iletisim.html" class="nav-link"><svg class="nav-icon" width="18" height="18"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>İletişim</a></li>
+            </ul>
+
+            <!-- Navbar Aksiyonlar: Tema -->
+            <div class="navbar-actions">
+                <label class="theme-switch" id="theme-switch" aria-label="Tema değiştir">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="theme-slider">
+                        <svg class="icon-sun" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="icon-moon" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </span>
+                </label>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Navbar yüksekliği kadar boşluk -->
+    <div class="navbar-spacer"></div>
+
+    <main>
+        <header class="projects-hero">
+            <h1 class="projects-title">Projelerim</h1>
+            <p class="projects-desc">Modern teknolojiler ve titiz tasarımlarla hayata geçirdiğim seçkin çalışmalarım.
+            </p>
+        </header>
+
+        <section class="projects-list" id="proje1">
+            <!-- Proje 1 (Resim Sağda) -->
+            <article class="project-row">
+                <div class="project-info">
+                    <h2>Okul Proje Sitesi</h2>
+                    <p>Öğrenim gördüğüm lisenin resmi web sitesinin tasarım ve yayına alınma süreçlerinde aktif rol
+                        alarak, okulun dijital kimliğinin oluşturulmasına katkı sağladım.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">Python</span>
+                    </div>
+                </div>
+                <div class="project-spacer"></div>
+                <div class="project-media">
+                    <img src="../resimler/okulsitesivebproje.png" alt="Okul projesi sitesi">
+                </div>
+            </article>
+
+            <!-- Proje 2 (Resim Solda - CSS ile otomatik) -->
+            <article class="project-row" id="proje3">
+                <div class="project-info">
+                    <h2>Arduino ile Robot Kol Tasarımı</h2>
+                    <p>Belirli bir yükü taşıma ve konumlandırma kapasitesine sahip, 3D tasarım ve Arduino programlama
+                        tekniklerini birleştiren yüksek hassasiyetli bir robot kol prototipi geliştirdim.</p>
+                    <div class="project-tags">
+                        <span class="tag">Arduino</span>
+                        <span class="tag">C++</span>
+                        <span class="tag">3D Tasarım</span>
+                    </div>
+                </div>
+                <div class="project-spacer"></div>
+                <div class="project-media">
+                    <img src="../resimler/robotkol.jpg" alt="Arduino Robot Kol">
+                </div>
+            </article>
+
+            <!-- Proje 3 (Resim Sağda) -->
+            <article class="project-row" id="proje2">
+                <div class="project-info">
+                    <h2>Blog Platformu</h2>
+                    <p>Okurların size anında ulaşması için GitHub, LinkedIn ve E-Posta kanallarını şık etkileşim
+                        kartlarıyla sunuyoruz. Modern hatları ve özel efektleriyle profesyonel kimliğinizi dijital bir
+                        kartvizit zarafetinde sergileyen bu yapı, tüm cihazlarda kusursuz erişilebilirlik sağlar. Teknik
+                        projeleriniz ile iş ağınız arasında estetik bir köprü kurarak dijital varlığınızı güçlendirir.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </div>
+                <div class="project-spacer"></div>
+                <div class="project-media">
+                    <img src="../resimler/blogtasarimi.png" alt="blog Sayfası Tasarımı">
+                </div>
+            </article>
+
+            <!-- Proje 4 (Resim Solda) -->
+            <article class="project-row" id="proje4">
+                <div class="project-info">
+                    <h2>Eğitim Sitesi Tasarımı</h2>
+                    <p>Bir ekibin parçası olarak, arayüz tasarımı ve içerik mimarisi konularında sorumluluk üstlendiğim
+                        eğitim sitesi projesinde; takım içi koordinasyonu sağlayarak kullanıcı odaklı bir platformun
+                        hayata geçirilmesinde aktif rol aldım.</p>
+                    <div class="project-tags">
+                        <span class="tag">Figma</span>
+                        <span class="tag">UI/UX</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </div>
+                <div class="project-spacer"></div>
+                <div class="project-media">
+                    <img src="../resimler/egitimsayfa.png" alt="Eğitim Sayfası">
+                </div>
+            </article>
+
+            <!-- Proje 5 (Resim Sağda) -->
+            <article class="project-row">
+                <div class="project-info">
+                    <h2>Yemek Tarifi Sitesi</h2>
+                    <p>Yazılım geliştirme süreçlerinde Python ve modern web teknolojileri (HTML/CSS) kullanılarak,
+                        sistem performansı ve kullanıcı etkileşimi en üst seviyede tutulmuştur.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                    </div>
+                </div>
+                <div class="project-spacer"></div>
+                <div class="project-media">
+                    <img src="../resimler/yemeksitesi.jpg" alt="Yemek Tarifi Sitesi">
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- FOOTER TASARIMI -->
+    <div id="footer-placeholder"></div>
+
+    <script src="../footer bolumu/footer.js"></script>
+    <script src="../footer bolumu/footer-dosyasi.js"></script>
+    <script src="../javadosya.js"></script>
+</body>
+
+</html>

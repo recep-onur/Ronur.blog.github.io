@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımda | Recep Onur</title>
+    <meta name="description" content="Recep Onur hakkında bilgiler.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../tema.css">
+    <link rel="stylesheet" href="hakkimda.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="main-navbar">
+        <div class="navbar-inner">
+
+            <!-- Sol: Logo / Profil -->
+            <a href="../index_sayfasi/index.html" class="navbar-brand" id="logo">
+                <div class="brand-avatar">RO</div>
+                <div class="brand-info">
+                    <span class="brand-name">Recep Onur</span>
+                    <span class="brand-tagline">Kişisel Portfolyo ve Blog</span>
+                </div>
+            </a>
+
+            <!-- Hamburger (mobil) -->
+            <button type="button" class="navbar-toggle" id="navbar-toggle" aria-label="Menüyü aç/kapat"
+                aria-expanded="false">
+                <span class="toggle-bar"></span>
+                <span class="toggle-bar"></span>
+                <span class="toggle-bar"></span>
+            </button>
+
+            <!-- Sağ: Linkler -->
+            <ul class="navbar-links" id="navbar-links">
+                <li><a href="../index_sayfasi/index.html" class="nav-link"><svg class="nav-icon" width="18" height="18"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                        </svg>Anasayfa</a></li>
+                <li><a href="hakkimda.html" class="nav-link active"><svg class="nav-icon" width="18" height="18"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>Hakkımda</a></li>
+                <li><a href="../blog_sayfasi/blog.html" class="nav-link"><svg class="nav-icon" width="18" height="18"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                            <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                        </svg>Blog</a></li>
+                <li><a href="../projelerim_sayfasi/projelerim.html" class="nav-link"><svg class="nav-icon" width="18"
+                            height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>Projelerim</a></li>
+                <li><a href="../iletisim.html" class="nav-link"><svg class="nav-icon" width="18" height="18"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>İletişim</a></li>
+            </ul>
+
+            <!-- Navbar tema değiştirme butonu -->
+            <div class="navbar-actions">
+                <!-- Gece/Gündüz Toggle -->
+                <label class="theme-switch" id="theme-switch" aria-label="Tema değiştir">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="theme-slider">
+                        <svg class="icon-sun" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="icon-moon" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </span>
+                </label>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Navbar yüksekliği kadar boşluk -->
+    <div class="navbar-spacer"></div>
+
+    <!-- Slogan Hero Bölümü -->
+    <section class="about-hero">
+        <div class="about-hero-bg"></div>
+        <div class="about-hero-content">
+            <h1 class="slogan-title">
+                <span class="slogan-fade">Geleceği</span>
+                <span class="slogan-gradient">Birlikte İnşa Ediyoruz</span>
+            </h1>
+            <p class="slogan-desc">Yaratıcılık, teknoloji ve vizyonu bir araya getirerek yarının dijital dünyasını
+                bugünden şekil veriyoruz.</p>
+        </div>
+    </section>
+
+    <!-- İçerik alanı -->
+    <main class="about-container">
+        <div class="about-grid">
+            <!-- Sol: Ben Kimim -->
+            <section class="about-card">
+                <div class="card-header">
+                    <svg class="card-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    <h2>Ben Kimim</h2>
+                </div>
+                <div class="card-body">
+                    <h2>Merhaba, ben Recep Onur.</h2>
+                    <p>Kendimi bildim bileli bir şeyler inşa etmeyi, bozup yeniden yapmayı seviyorum. Yazılım
+                        dünyasına ilk girdiğimde bu işin sadece kod yazmak olmadığını, aslında bir problem çözme
+                        sanatı olduğunu fark ettim.</p>
+                    <p>Çoğu insan gibi ben de her şeyi bir gecede öğrenmedim. Hatalar yaptım, bazen saatlerce bir satır
+                        kodun veya bir tasarım detayının başında takıldım. Ama beni diri tutan şey de tam olarak bu
+                        süreç; o çözümü bulduğum anki tatmin duygusu.</p>
+                    <p>Burada gördüğünüz projeler sadece bitmiş işler değil, her birinde öğrendiğim yeni bir dersin
+                        özeti aslında. Eğer sadece "işini yapan" biriyle değil de, projenize gerçekten kafa yoracak bir
+                        yol arkadaşıyla çalışmak isterseniz, doğru yerdesiniz.</p>
+                </div>
+            </section>
+
+            <!-- Sağ: İlgilerim ve Becerilerim -->
+            <section class="about-card">
+                <div class="card-header">
+                    <svg class="card-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                    <h2>İlgilerim ve Becerilerim</h2>
+                </div>
+                <div class="card-body">
+                    <div class="skills-container">
+                        <!-- 1. HTML (90%) -->
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>HTML</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <!-- 2. CSS (80%) -->
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>CSS</span>
+                                <span>78%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="78"></div>
+                            </div>
+                        </div>
+                        <!-- 3. Python (67%) -->
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Python</span>
+                                <span>67%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="67"></div>
+                            </div>
+                        </div>
+                        <!-- 4. JavaScript (30%) -->
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span>30%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="30"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Sürekli öğrenmeyi bir yaşam biçimi olarak benimsiyor ve her gün kendimi bir adım daha ileriye
+                        taşımaya çalışıyorum.</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Bunları da Yaptım Bölümü -->
+        <section class="about-projects">
+            <h2 class="section-title">Bunları da Yaptım</h2>
+            <div class="projects-grid">
+                <!-- Proje 1 -->
+                <div class="project-box">
+                    <div class="project-box-content">
+                        <h3>Okul Web Sitesi</h3>
+                        <p>Öğrenim gördüğüm lisenin resmi web sitesinin tasarım ve yayına alınma süreçlerinde aktif rol
+                            alarak, okulun dijital kimliğinin oluşturulmasına katkı sağladım.</p>
+                        <a href="../projelerim_sayfasi/projelerim.html#proje1" class="project-box-link">İncele</a>
+                    </div>
+                </div>
+                <!-- Proje 2 -->
+                <div class="project-box">
+                    <div class="project-box-content">
+                        <h3>Blog Platformu</h3>
+                        <p>Kişisel yazılarımı paylaştığım, minimal ve hızlı bir blog sitesi projesi.</p>
+                        <a href="../projelerim_sayfasi/projelerim.html#proje2" class="project-box-link">İncele</a>
+                    </div>
+                </div>
+                <!-- Proje 3 -->
+                <div class="project-box">
+                    <div class="project-box-content">
+                        <h3>Arduino ile Robot Kol Tasarımı </h3>
+                        <p>Belirli bir yükü taşıma ve konumlandırma kapasitesine sahip, 3D tasarım ve Arduino
+                            programlama tekniklerini birleştiren yüksek hassasiyetli bir robot kol prototipi
+                            geliştirdim.</p>
+                        <a href="../projelerim_sayfasi/projelerim.html#proje3" class="project-box-link">İncele</a>
+                    </div>
+                </div>
+                <!-- Proje 4 -->
+                <div class="project-box">
+                    <div class="project-box-content">
+                        <h3>Eğitim Sitesi Tasarımı</h3>
+                        <p>Bir ekibin parçası olarak, arayüz tasarımı ve içerik mimarisi konularında sorumluluk
+                            üstlendiğim eğitim sitesi projesinde; takım içi koordinasyonu sağlayarak kullanıcı odaklı
+                            bir platformun hayata geçirilmesinde aktif rol aldım.</p>
+                        <a href="../projelerim_sayfasi/projelerim.html#proje4" class="project-box-link">İncele</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Misyon ve Vizyon Bölümü -->
+        <section class="mission-vision-section">
+            <div class="about-card mission-vision-card">
+                <div class="mv-container">
+                    <!-- Misyon -->
+                    <div class="mv-box">
+                        <div class="card-header">
+                            <svg class="card-icon" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <circle cx="12" cy="12" r="6"></circle>
+                                <circle cx="12" cy="12" r="2"></circle>
+                            </svg>
+                            <h2>Misyonum</h2>
+                        </div>
+                        <div class="card-body">
+                            <p>Bilgiye erişimi kolaylaştıran dijital platformlar ve hayatı kolaylaştıran robotik
+                                sistemler aracılığıyla toplumsal gelişime katkı sağlamak.</p>
+                        </div>
+                    </div>
+
+                    <div class="mv-divider"></div>
+
+                    <!-- Vizyon -->
+                    <div class="mv-box">
+                        <div class="card-header">
+                            <svg class="card-icon" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.9 1.2 1.5 1.5 2.5">
+                                </path>
+                                <path d="M9 18h6"></path>
+                                <path d="M10 22h4"></path>
+                            </svg>
+                            <h2>Vizyonum</h2>
+                        </div>
+                        <div class="card-body">
+                            <p>Teknolojiyi sadece tüketen değil, her alanda verimliliği artıran ve eğitimde fırsat
+                                eşitliği yaratan sistemler kurgulayan bir geliştirici olmak</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <!--js bağlantıları-->
+    <script src="../footer bolumu/footer.js"></script>
+    <script src="../footer bolumu/footer-dosyasi.js"></script>
+    <script src="../javadosya.js"></script>
+</body>
+
+</html>

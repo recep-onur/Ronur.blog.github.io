@@ -1,0 +1,156 @@
+/* Projelerim Sayfası - Özel Geniş Yerleşim Stilleri */
+
+.projects-hero {
+    padding: 8rem 2rem 4rem;
+    text-align: center;
+    background: radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.05), transparent 70%);
+}
+
+.projects-title {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 800;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #6366f1, #a78bfa, #f472b6);
+    -webkit-background-clip: text;
+    /*Bu bazı tarayıcılarda sorun çıkarabilecek bir uyarı*/
+    -webkit-text-fill-color: transparent;
+}
+
+.projects-desc {
+    color: #94a3b8;
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Proje Satırları Konteynırı */
+.projects-list {
+    width: 100%;
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+}
+
+/* Ana Proje Satırı Yapısı */
+.project-row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 12.5%;
+    /* Sağdan ve soldan %12.5 boşluk */
+    gap: 0;
+}
+
+/* Metin Alanı (%37.5) */
+.project-info {
+    width: 50%;
+    /* İçerideki %75'lik alanın %50'si toplamın %37.5'ine denk gelir */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Boşluk Alanı (%12.5) */
+.project-spacer {
+    width: 16.66%;
+    /* İçerideki %75'lik alanın %16.66'sı toplamın %12.5'ine denk gelir */
+}
+
+/* Resim Alanı (%25) */
+.project-media {
+    width: 33.33%;
+    /* İçerideki %75'lik alanın %33.33'ü toplamın %25'ine denk gelir */
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    aspect-ratio: 4/3;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.project-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.project-media:hover img {
+    transform: scale(1.08);
+}
+
+/* Metin Detayları */
+.project-info h2 {
+    font-size: 2.2rem;
+    color: #f1f5f9;
+    font-weight: 800;
+}
+
+.project-info p {
+    color: #94a3b8;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag {
+    padding: 6px 14px;
+    background: rgba(99, 102, 241, 0.1);
+    color: #a78bfa;
+    border-radius: 100px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* ALTERNATİF DİZİLİM (Çift sayılı satırlar) */
+/* 2. Proje, 4. Proje vb. için resim solda, metin sağda */
+.project-row:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+/* Light Mode Uyumluluğu */
+body.light-mode .project-info h2 {
+    color: #0f172a;
+}
+
+body.light-mode .project-info p {
+    color: #475569;
+}
+
+body.light-mode .project-media {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    background: #fff;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 1024px) {
+
+    .project-row,
+    .project-row:nth-child(even) {
+        flex-direction: column;
+        padding: 0 5%;
+        gap: 3rem;
+    }
+
+    .project-info,
+    .project-spacer,
+    .project-media {
+        width: 100%;
+    }
+
+    .project-spacer {
+        display: none;
+    }
+
+    .project-info {
+        text-align: center;
+        align-items: center;
+    }
+}
